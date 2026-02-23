@@ -70,3 +70,4 @@ This project establishes an AI-driven framework for predicting the hardware cost
 
 &nbsp;  pip install -r requirements.txt
 
+
