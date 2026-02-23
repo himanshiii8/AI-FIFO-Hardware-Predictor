@@ -1,4 +1,4 @@
-\# AI-Driven Hardware Area Predictor (VLSI/FPGA)
+\ AI-Driven Hardware Area Predictor (VLSI/FPGA)
 
 
 
@@ -10,35 +10,35 @@ This project establishes an AI-driven framework for predicting the hardware cost
 
 \## 🚀 Key Features \& Pipeline
 
-1\. \*\*Automated Data Generation:\*\* Uses a custom Python script to drive the \*\*Yosys\*\* open-source synthesis tool, automatically generating over 5,000 unique synthetic FIFO designs by varying Bus Width (8–128 bits) and Depth (2–1024 words).
+1\. Automated Data Generation: Uses a custom Python script to drive the \*\*Yosys\*\* open-source synthesis tool, automatically generating over 5,000 unique synthetic FIFO designs by varying Bus Width (8–128 bits) and Depth (2–1024 words).
 
-2\. \*\*Machine Learning Core:\*\* Trains a \*\*Random Forest Regressor\*\* to learn the complex, non-linear "step-function" behavior of FPGA mapping.
+2\. Machine Learning Core: Trains a \*\*Random Forest Regressor\*\* to learn the complex, non-linear "step-function" behavior of FPGA mapping.
 
-3\. \*\*Scientific Validation:\*\* Benchmarks the AI against traditional mathematical models (Linear Regression), proving that AI successfully captures hardware optimizations that simple math misses.
+3\. Scientific Validation: Benchmarks the AI against traditional mathematical models (Linear Regression), proving that AI successfully captures hardware optimizations that simple math misses.
 
-4\. \*\*The "Reverse Solver":\*\* A practical application tool where an engineer inputs a specific resource budget (e.g., "5000 cells"), and the AI instantly scans thousands of combinations to recommend the optimal design configuration.
+4\. The "Reverse Solver": A practical application tool where an engineer inputs a specific resource budget (e.g., "5000 cells"), and the AI instantly scans thousands of combinations to recommend the optimal design configuration.
 
 
 
 \## 📊 Results \& Engineering Insights
 
-\* \*\*High Accuracy:\*\* The Random Forest model achieved an accuracy of \*\*~98%\*\* on unseen test data.
+High Accuracy: The Random Forest model achieved an accuracy of \*\*~98%\*\* on unseen test data.
 
-\* \*\*Reliability (Unbiased Error):\*\* Residual analysis revealed a perfect Gaussian "Bell Curve" centered at zero, proving the model is highly reliable and does not systematically overestimate or underestimate area.
+Reliability (Unbiased Error): Residual analysis revealed a perfect Gaussian "Bell Curve" centered at zero, proving the model is highly reliable and does not systematically overestimate or underestimate area.
 
-\* \*\*Hardware Insight (Width vs. Depth):\*\* Feature importance analysis proved that increasing a design's \*\*Width (0.53)\*\* is more expensive than increasing its \*\*Depth (0.47)\*\*. This is because width incurs a linear penalty in logic cells, while depth leverages highly optimized internal FPGA memory blocks (BRAMs/LUTRAMs).
+Hardware Insight (Width vs. Depth): Feature importance analysis proved that increasing a design's \*\*Width (0.53)\*\* is more expensive than increasing its \*\*Depth (0.47)\*\*. This is because width incurs a linear penalty in logic cells, while depth leverages highly optimized internal FPGA memory blocks (BRAMs/LUTRAMs).
 
 
 
 \## 🛠️ Tech Stack
 
-\* \*\*Language:\*\* Python, Verilog
+Language:Python, Verilog
 
-\* \*\*Hardware Tools:\*\* Yosys Open SYnthesis Suite
+Hardware Tools: Yosys Open SYnthesis Suite
 
-\* \*\*AI/ML Libraries:\*\* Scikit-Learn, Pandas, NumPy
+AI/ML Libraries: Scikit-Learn, Pandas, NumPy
 
-\* \*\*Visualization:\*\* Matplotlib, Seaborn
+Visualization: Matplotlib, Seaborn
 
 
 
@@ -69,5 +69,6 @@ This project establishes an AI-driven framework for predicting the hardware cost
 &nbsp;  ```bash
 
 &nbsp;  pip install -r requirements.txt
+
 
 
