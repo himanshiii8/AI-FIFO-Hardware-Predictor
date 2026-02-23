@@ -1,6 +1,6 @@
 \ AI-Driven Hardware Area Predictor (VLSI/FPGA)
 
-
+📄 **[Read the full Research Paper here!](./FIFO_AI_Research_Paper.pdf)**
 
 \## 📌 Overview
 
@@ -69,6 +69,7 @@ Visualization: Matplotlib, Seaborn
 &nbsp;  ```bash
 
 &nbsp;  pip install -r requirements.txt
+
 
 
 
